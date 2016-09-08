@@ -7,8 +7,16 @@ namespace app.Controllers {
 }
   // Login controller
   export class LoginController {
+      public user;
 
-    constructor() {
+
+      public login(){
+      this.userService.login(this.user);
+    }
+    constructor(
+      private  userService: app.Services.UserService,
+      public $state: ng.ui.IStateService
+    ) {
 
     }
   }
@@ -17,13 +25,16 @@ namespace app.Controllers {
         public user;
 
         public register() {
-        this.userService.register(this.user);
+        this.userService.register(this.user).then(() => {
+            this.$state.go('Home');
+        })
         }
 
       constructor(
-      private  userService: app.Services.UserService
+      private  userService: app.Services.UserService,
+      public $state: ng.ui.IStateService
       ) {
-}
+      }
       }
     // Controllers
   angular.module('app').controller('HomeController', HomeController),

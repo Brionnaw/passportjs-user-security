@@ -38,5 +38,11 @@ let newUser = new User({
   }
 });
  });
+
+ //POST - login user
+ router.post('/users/login', function(req, res) {
+   console.log(req.body);
+   res.send('success');
+ });
 // export router
  export = router;
