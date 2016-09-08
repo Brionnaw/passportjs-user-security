@@ -1,0 +1,48 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "body-parser/body-parser.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "express/express.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "node/node.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "express-jwt/express-jwt.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "express-serve-static-core/express-serve-static-core.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "jsonwebtoken/jsonwebtoken.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "mime/mime.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "express-unless/express-unless.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "mongodb/mongodb.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "mongoose/mongoose.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "passport-local/passport-local.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    },
+    "passport/passport.d.ts": {
+      "commit": "17795ae18fc214be862fe578ad48c28fecfef8a6"
+    }
+  }
+}

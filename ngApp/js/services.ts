@@ -1,12 +1,16 @@
 namespace app.Services {
   export class UserService {
-
+    public RegisterResource;
     public register(user) {
-      console.log (user)
+      return this.RegisterResource.save(user).$promise;
+      
+
 
     }
-    constructor() {
-
+    constructor(
+        $resource:ng.resource.IResourceService
+    ) {
+      this.RegisterResource = $resource('api/users/register');
     }
   }
 

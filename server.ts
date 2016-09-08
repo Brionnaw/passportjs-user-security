@@ -5,6 +5,19 @@ import logger = require('morgan');
 import cookieParser = require('cookie-parser');
 import bodyParser = require('body-parser');
 const app = express();
+let mongoose = require('mongoose')
+
+
+
+mongoose.connect('mongodb://localhost/user-app');
+
+
+//database connection
+  let db = mongoose.connection;
+  db.on('error', console.error.bind(console, 'connection error'));
+  db.on('open', () => {
+  console.log('connection succesful');
+});
 
 // view engine setup
 app.set('views', './views');
@@ -27,6 +40,8 @@ app.use('/api', require('./api/movies'));
 app.use('/api', require('./api/genres'));
 app.use('/api', require('./api/guestbook'));
 app.use('/api', require('./api/deepThought'));
+app.use('/api', require('./api/users'));
+
 
 app.get('/*', function(req, res, next) {
   if (/.js|.html|.css|templates|js|scripts/.test(req.path) || req.xhr) {
